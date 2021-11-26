@@ -9,8 +9,14 @@ export const Form = styled.form`
     gap: 60px;
 `;
 
-export const Input = styled.input`
+export const DualContainer = styled.div`
     width: 100%;
+    display: flex;
+    gap: 10px;
+`;
+
+export const Input = styled.input`
+    width: ${ props => props.small ? '30%' : '100%' };
     border: none;
     border-bottom: solid 1px ${ theme.principal };
     caret-color: ${ theme.principal };
