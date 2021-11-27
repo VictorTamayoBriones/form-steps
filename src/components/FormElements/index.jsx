@@ -36,6 +36,24 @@ export const Input = styled.input`
     outline: none;
 `;
 
+export const ContainerInputFile = styled.div`
+    display: flex;
+    justify-content: center;
+    
+    label{
+        color: ${ theme.principal };
+        font-size: 18px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+
+`;
+
 export const Button = styled.button`
     border: solid 1px ${ theme.principal };
     color: ${ theme.principal };
