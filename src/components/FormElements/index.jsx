@@ -15,6 +15,17 @@ export const DualContainer = styled.div`
     gap: 10px;
 `;
 
+export const NumberContainer = styled.div`
+    display: flex;;
+    gap: 20px;
+    label{
+        width: max-content;
+    }
+    input{
+        width: 50%;
+    }
+`;
+
 export const Input = styled.input`
     width: ${ props => props.small ? '30%' : '100%' };
     border: none;
@@ -39,3 +50,20 @@ export const Button = styled.button`
         color: #fff;
     }
 `;
+
+
+/*
+.containerInputFile{
+    display: flex;
+    justify-content: center;
+    input[type="file"]{
+        display: none;
+    }
+    label{
+        color: red;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+*/
